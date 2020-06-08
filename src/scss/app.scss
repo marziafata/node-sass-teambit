@@ -1,5 +1,4 @@
-@import '~bootstrap/scss/bootstrap.scss';
-
-h1 {
-    color: green;
-}
+@import "partials/_normalize";
+@import "partials/_variables";
+@import "partials/_common";
+@import "partials/_header";
