@@ -8,14 +8,3 @@ body {
         color: $colore_testi;
     }
 }
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.container {
-    width: 50%;
-    margin: auto;
-}

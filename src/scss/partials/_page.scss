@@ -1,0 +1,19 @@
+section.jumbotron {
+    background-color: white;
+    padding: 64px 15px; 
+    h1 {
+        margin-bottom: $margin_bottom_jumbo;
+        font-size: 50px;
+    }
+    p {
+        margin-bottom: $margin_bottom_jumbo;
+        font-size: 22px;
+    }
+    small {
+        font-size: 14px;
+    }
+
+    .spazio-bottoni {
+        margin-bottom: $margin_bottom_jumbo;
+    }
+}
