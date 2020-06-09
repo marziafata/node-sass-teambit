@@ -69,6 +69,10 @@ section.before-after {
     }
 }
 
+body > main > section:nth-child(2) > div {
+    @include separatore;
+}
+
 section.feedback {
 
     div.img-wrap {

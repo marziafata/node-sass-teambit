@@ -11328,10 +11328,6 @@ main {
   padding: 64px 0;
 }
 
-.container:not(.jumbotron) {
-  border-bottom: 1px solid #563e2b;
-}
-
 .button,
 section.jumbotron .button-blue,
 header nav button.white {
@@ -11488,6 +11484,10 @@ section.before-after img.big {
   display: block;
   margin: 40px auto;
   width: 280px;
+}
+
+body > main > section:nth-child(2) > div {
+  border-bottom: 1px solid #563e2b;
 }
 
 section.feedback div.img-wrap {
