@@ -371,6 +371,8 @@ template {
 
 body {
   color: #563e2b;
+  font-size: 13px;
+  font-family: "HarmoniaSansProCyr-Regular", Arial, sans-serif;
 }
 
 body a {
@@ -387,12 +389,10 @@ body a {
 .container {
   width: 50%;
   margin: auto;
-  background-color: pink;
 }
 
 header {
   height: 75px;
-  background-color: pink;
 }
 
 header nav {
@@ -405,5 +405,44 @@ header nav {
 header nav li.link-menu {
   list-style-type: none;
   display: inline-block;
+  margin-right: 20px;
+}
+
+header nav li.link-menu:not(:last-child) {
+  margin-right: 20px;
+}
+
+header nav a:hover {
+  color: #102c54;
+}
+
+header nav a {
+  font-weight: 600;
+}
+
+header nav button.signup {
+  display: inline-block;
+  padding: 0 10px;
+  height: 35px;
+  width: 95px;
+  border-radius: 5px;
+  border: 1px solid #102c54;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+header nav button.signup a {
+  color: #102c54;
+}
+
+header .fa-caret-down {
+  margin-left: 10px;
+}
+
+hr {
+  margin: 0;
+  color: #563e2b;
 }
 

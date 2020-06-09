@@ -1,6 +1,8 @@
 body {
     color: $colore_testi;
-    
+    font-size: 13px;
+    font-family: 'HarmoniaSansProCyr-Regular',Arial,sans-serif;
+
     a {
         text-decoration: none;
         color: $colore_testi;
@@ -16,5 +18,4 @@ body {
 .container {
     width: 50%;
     margin: auto;
-    background-color: pink;
 }
