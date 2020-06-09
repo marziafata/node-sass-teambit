@@ -19,7 +19,7 @@ section.jumbotron {
     }
 
     .button-blue {
-            @include my-flex;
+            @include my-flex(row, space-between, center);
             @extend .button;
             background-color: $colore_blu_notte;
             a{
@@ -65,5 +65,16 @@ section.before-after {
 
     img.big {
         @include proprieta_img(block, 40px auto, 280px);
+    }
+}
+
+section.feedback {
+
+    div.img-wrap {
+        @include my-flex(row, flex-end, center);
+    }
+
+    img.screenshot {
+        width: 768px;
     }
 }

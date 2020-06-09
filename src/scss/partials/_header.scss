@@ -4,7 +4,7 @@ header {
     nav {
         height: 100%;
         @include separatore;
-        @include my-flex;
+        @include my-flex(row, space-between, center);
 
         ul {
             margin: 0;
@@ -24,7 +24,7 @@ header {
         }
 
         button.white {
-            @include my-flex;
+            @include my-flex(row, space-between, center);
             @extend .button;
             background-color: white;
             a {

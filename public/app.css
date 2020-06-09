@@ -11315,7 +11315,12 @@ body a:hover {
   text-decoration: none;
 }
 
-.container {
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
   padding: 64px 0;
 }
 
@@ -11357,6 +11362,7 @@ header nav {
   height: 100%;
   border-bottom: 1px solid #563e2b;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -11380,6 +11386,7 @@ header nav a {
 
 header nav button.white {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -11423,6 +11430,7 @@ section.jumbotron .spazio-bottoni {
 
 section.jumbotron .button-blue {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #191970;
@@ -11475,5 +11483,16 @@ section.before-after img.big {
   display: block;
   margin: 40px auto;
   width: 280px;
+}
+
+section.feedback div.img-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section.feedback img.screenshot {
+  width: 768px;
 }
 

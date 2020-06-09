@@ -2,10 +2,11 @@
     border-bottom: 1px solid $colore_testi;
 }
 
-@mixin my-flex {
+@mixin my-flex($direction, $justify, $align) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 };
 
 @mixin titoli_sezioni {
