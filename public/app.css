@@ -11316,7 +11316,21 @@ body a:hover {
 }
 
 .container {
-  padding: 0;
+  padding: 64px 0;
+}
+
+.container:not(.jumbotron) {
+  border-bottom: 1px solid #563e2b;
+}
+
+.button,
+section.jumbotron .button-blue,
+header nav button.white {
+  display: inline-block;
+  padding: 0 10px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #191970;
 }
 
 @media (min-width: 1200px) {
@@ -11341,6 +11355,7 @@ header {
 
 header nav {
   height: 100%;
+  border-bottom: 1px solid #563e2b;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11367,12 +11382,6 @@ header nav button.white {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: inline-block;
-  padding: 0 10px;
-  height: 35px;
-  width: 95px;
-  border-radius: 5px;
-  border: 1px solid #191970;
   background-color: white;
 }
 
@@ -11416,11 +11425,6 @@ section.jumbotron .button-blue {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: inline-block;
-  padding: 0 10px;
-  height: 35px;
-  border-radius: 5px;
-  border: 1px solid #191970;
   background-color: #191970;
 }
 
@@ -11445,7 +11449,31 @@ section.jumbotron div.jumbo-right {
   padding: 0;
 }
 
-section.people {
+section.before-after {
   background-color: #f8e0cc;
+}
+
+section.before-after h2 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+section.before-after img.small {
+  display: block;
+  margin: 20px auto;
+  width: 140px;
+}
+
+section.before-after p.figcaption {
+  text-align: center;
+  font-size: 18px;
+}
+
+section.before-after img.big {
+  display: block;
+  margin: 40px auto;
+  width: 280px;
 }
 

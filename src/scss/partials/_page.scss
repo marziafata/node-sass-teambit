@@ -1,7 +1,6 @@
 section.jumbotron {
     background-color: white;
-    padding: 64px 0;
-
+    padding: $padding_sopra_sotto;
 
     h1 {
         margin-bottom: $margin_bottom_jumbo;
@@ -20,8 +19,13 @@ section.jumbotron {
     }
 
     .button-blue {
-        @include button-blue;
-    }
+            @include my-flex;
+            @extend .button;
+            background-color: $colore_blu_notte;
+            a{
+                color: white;
+            }
+    };
 
     .button-blue:hover {
         background-color: #14145a;
@@ -42,6 +46,24 @@ section.jumbotron {
 
 }
 
-section.people {
+section.before-after {
     background-color: $colore_principale;
+
+    h2 {
+        @include titoli_sezioni;
+        margin-bottom: $margine_titolo;
+    }
+
+    img.small {
+        @include proprieta_img(block, 20px auto, 140px);
+    }
+
+    p.figcaption {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    img.big {
+        @include proprieta_img(block, 40px auto, 280px);
+    }
 }
