@@ -5,25 +5,24 @@ header {
         height: 100%;
         @include my-flex;
 
+        ul {
+            margin: 0;
+        }
+
         li.link-menu {
             list-style-type: none;
             display: inline-block;
-            margin-right: 20px;
         }
 
         li.link-menu:not(:last-child){
             margin-right: 20px;
         }
 
-        a:hover {
-            color: $colore_blu_notte;
-        }
-
         a {
             font-weight: 600;
         }
 
-        button.signup {
+        button.white {
             @include my-flex;
             display: inline-block;
             padding: 0 10px;

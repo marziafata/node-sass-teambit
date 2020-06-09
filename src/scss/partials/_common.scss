@@ -7,4 +7,31 @@ body {
         text-decoration: none;
         color: $colore_testi;
     }
+
+    a:hover {
+        color: $blu_notte_25percentopiuscuro;
+        text-decoration: none;
+    }
+}
+
+.container {
+    padding: 0;
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1150px;
+  }
 }

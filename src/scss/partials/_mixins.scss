@@ -2,4 +2,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+};
+
+@mixin button-blue {
+        @include my-flex;
+        display: inline-block;
+        padding: 0 10px;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid $colore_blu_notte;
+        background-color: $colore_blu_notte;
+        a{
+            color: white;
+        }
 }
+
+
+// un qualcosa tipo questo
+// @mixin my-flex($direction, $justify, $align) {
+//     display: flex;
+//     flex-direction: $direction;
+//     justify-content: $justify;
+//     align-items: $align;
+// }
+// 11:35
+// che poi vai ad usare in questo modo:
+// @include my-flex(row, space-around, center);

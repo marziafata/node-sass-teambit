@@ -11310,6 +11310,31 @@ body a {
   color: #563e2b;
 }
 
+body a:hover {
+  color: #14145a;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1150px;
+  }
+}
+
 header {
   height: 75px;
 }
@@ -11321,25 +11346,24 @@ header nav {
   align-items: center;
 }
 
+header nav ul {
+  margin: 0;
+}
+
 header nav li.link-menu {
   list-style-type: none;
   display: inline-block;
-  margin-right: 20px;
 }
 
 header nav li.link-menu:not(:last-child) {
   margin-right: 20px;
 }
 
-header nav a:hover {
-  color: #102c54;
-}
-
 header nav a {
   font-weight: 600;
 }
 
-header nav button.signup {
+header nav button.white {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11348,12 +11372,12 @@ header nav button.signup {
   height: 35px;
   width: 95px;
   border-radius: 5px;
-  border: 1px solid #102c54;
+  border: 1px solid #191970;
   background-color: white;
 }
 
-header nav button.signup a {
-  color: #102c54;
+header nav button.white a {
+  color: #191970;
 }
 
 header .fa-caret-down {
@@ -11367,7 +11391,7 @@ hr {
 
 section.jumbotron {
   background-color: white;
-  padding: 64px 15px;
+  padding: 64px 0;
 }
 
 section.jumbotron h1 {
@@ -11386,5 +11410,42 @@ section.jumbotron small {
 
 section.jumbotron .spazio-bottoni {
   margin-bottom: 30px;
+}
+
+section.jumbotron .button-blue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-block;
+  padding: 0 10px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #191970;
+  background-color: #191970;
+}
+
+section.jumbotron .button-blue a {
+  color: white;
+}
+
+section.jumbotron .button-blue:hover {
+  background-color: #14145a;
+}
+
+section.jumbotron small.congiunzione {
+  line-height: 35px;
+  color: grey;
+}
+
+section.jumbotron img {
+  background-size: cover;
+}
+
+section.jumbotron div.jumbo-right {
+  padding: 0;
+}
+
+section.people {
+  background-color: #f8e0cc;
 }
 
