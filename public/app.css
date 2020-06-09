@@ -11315,6 +11315,10 @@ body a:hover {
   text-decoration: none;
 }
 
+main {
+  font-size: 22px;
+}
+
 .container,
 .container-fluid,
 .container-sm,
@@ -11336,6 +11340,7 @@ header nav button.white {
   height: 35px;
   border-radius: 5px;
   border: 1px solid #191970;
+  font-size: 13px;
 }
 
 @media (min-width: 1200px) {
@@ -11494,5 +11499,50 @@ section.feedback div.img-wrap {
 
 section.feedback img.screenshot {
   width: 768px;
+}
+
+section.feedback div.wrap {
+  width: 420px;
+}
+
+section.feedback h2 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  text-align: left;
+}
+
+section.feedback p {
+  margin-bottom: 30px;
+}
+
+section.feedback a {
+  color: #191970;
+  margin-top: 20px;
+}
+
+section.feedback .wrap img {
+  display: block;
+  margin: 40px auto;
+  width: 270px;
+}
+
+.twin .invertito {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+
+body > main > section.feedback.twin > div > div > div.col-lg-6.img-wrap.invertito2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+body > main > section.feedback.twin > div > div > div.col-lg-6.invertito > div > h2 {
+  text-align: right;
 }
 
